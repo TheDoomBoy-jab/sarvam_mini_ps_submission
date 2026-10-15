@@ -312,7 +312,11 @@ def load_policy(json_path: Path, policy: str) -> Tuple[List[str], List[int], Opt
         if policy not in data:
             raise SystemExit(f"policy {policy!r} not in {json_path}; available: {sorted(data)}")
         r = data[policy]
-        return list(r["target"]), [int(g) for g in r["schedule"]], r.get("average_lagging_ms"), str(json_path)
+        try:
+            rel_src = str(json_path.resolve().relative_to(HERE.parent.parent))
+        except ValueError:
+            rel_src = str(json_path.name)
+        return list(r["target"]), [int(g) for g in r["schedule"]], r.get("average_lagging_ms"), rel_src
     if policy != BUILTIN_POLICY:
         raise SystemExit(f"{json_path} not found and no built-in copy of policy {policy!r}")
     print(f"WARNING: {json_path} not found; using the built-in copy of {BUILTIN_POLICY}.")

@@ -9,10 +9,13 @@ A complete, end-to-end, causal simultaneous speech-to-speech translation pipelin
 To reproduce all results, metrics, and figures with a single command suite, see **[`RESULTS.md`](RESULTS.md)**:
 
 ```bash
-# Set PYTHONPATH
-export PYTHONPATH="code:code/scripts:/Users/aahannayak/sarvam/.venv/lib/python3.14/site-packages"
+# 1. Environment setup (Python 3.10+ / uv)
+# uv sync   # or: pip install -e .
 
-# Run all 4 phases end-to-end
+# 2. Set PYTHONPATH (from repository root)
+export PYTHONPATH=".:code:code/scripts:$PYTHONPATH"
+
+# 3. Run all phases end-to-end
 python3 code/scripts/acoustic_conditioning.py
 python3 code/scripts/audit_boundaries.py report
 python3 code/scripts/rgnpe_engine.py
@@ -45,6 +48,7 @@ code/
 │   ├── read_write_matrix.csv     # Step-by-step reading and emission schedule matrix
 │   ├── phase4_latency_metrics.json # Computed AL, AP, and Pareto metrics across 11 policies
 │   ├── latency_vs_accuracy.png   # Publication-quality 300 DPI Pareto frontier plot
+│   ├── appendix_wait3_handwritten.png # Handwritten Wait-3 schedule & AL proof
 │   ├── pdf_preview/              # Rendered 150 DPI page preview PNGs
 │   └── phase4_streaming_rollout.json # Measured audio-clock & wall-clock streaming rollout
 ├── scripts/

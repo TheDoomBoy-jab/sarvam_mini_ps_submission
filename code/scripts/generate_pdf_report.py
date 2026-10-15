@@ -28,6 +28,13 @@ A4_WIDTH = 8.27
 A4_HEIGHT = 11.69
 DPI = 300
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+CODE_DIR = SCRIPT_DIR.parent
+REPO_ROOT = CODE_DIR.parent
+RESULTS_DIR = CODE_DIR / "results"
+PDF_PREVIEW_DIR = RESULTS_DIR / "pdf_preview"
+PDF_PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
+
 NAVY = "#0f2027"
 BLUE = "#203a43"
 TEAL = "#2c5364"
@@ -192,7 +199,7 @@ def build_page_1(pdf):
     )
     y, _ = add_wrapped_text(ax, renderer, 0.5, y, s5_text, fontsize=6.8, linespacing=1.20)
     
-    fig.savefig("/Users/aahannayak/sarvam/code/results/pdf_preview/page_1.png", dpi=150)
+    fig.savefig(PDF_PREVIEW_DIR / "page_1.png", dpi=150)
     pdf.savefig(fig)
     plt.close(fig)
 
@@ -275,7 +282,7 @@ def build_page_2(pdf):
     )
     y, _ = add_wrapped_text(ax, renderer, 0.5, y, v_text, fontsize=6.8, linespacing=1.20)
     
-    fig.savefig("/Users/aahannayak/sarvam/code/results/pdf_preview/page_2.png", dpi=150)
+    fig.savefig(PDF_PREVIEW_DIR / "page_2.png", dpi=150)
     pdf.savefig(fig)
     plt.close(fig)
 
@@ -372,7 +379,7 @@ def build_page_3(pdf):
     )
     y, _ = add_wrapped_text(ax, renderer, 0.5, y, stress_text, fontsize=6.8, linespacing=1.20)
     
-    fig.savefig("/Users/aahannayak/sarvam/code/results/pdf_preview/page_3.png", dpi=150)
+    fig.savefig(PDF_PREVIEW_DIR / "page_3.png", dpi=150)
     pdf.savefig(fig)
     plt.close(fig)
 
@@ -397,12 +404,12 @@ def build_page_4(pdf):
     y, _ = add_wrapped_text(ax, renderer, 0.5, y, t_lead, fontsize=6.8, pad_after=0.03)
     
     # Embed Pareto PNG plot centered with correct aspect ratio
-    png_path = "/Users/aahannayak/sarvam/code/results/latency_vs_accuracy.png"
-    if os.path.exists(png_path):
+    png_path = RESULTS_DIR / "latency_vs_accuracy.png"
+    if png_path.exists():
         plot_w = 5.50
         plot_h = plot_w / 1.724  # 3.19 in
         plot_x = (A4_WIDTH - plot_w) / 2.0
-        img = mpimg.imread(png_path)
+        img = mpimg.imread(str(png_path))
         ax.imshow(img, extent=[plot_x, plot_x + plot_w, y - plot_h, y], aspect="auto")
         y -= (plot_h + 0.08)
     else:
@@ -469,13 +476,13 @@ def build_page_4(pdf):
     )
     y, _ = add_wrapped_text(ax, renderer, 0.5, y, ref_text, fontsize=6.0, linespacing=1.16)
     
-    fig.savefig("/Users/aahannayak/sarvam/code/results/pdf_preview/page_4.png", dpi=150)
+    fig.savefig(PDF_PREVIEW_DIR / "page_4.png", dpi=150)
     pdf.savefig(fig)
     plt.close(fig)
 
 def main():
-    out_pdf = Path("/Users/aahannayak/sarvam/aahan_nayak_mini_ps.pdf")
-    code_pdf = Path("/Users/aahannayak/sarvam/code/aahan_nayak_mini_ps.pdf")
+    out_pdf = REPO_ROOT / "aahan_nayak_mini_ps.pdf"
+    code_pdf = CODE_DIR / "aahan_nayak_mini_ps.pdf"
     print(f"Generating 4-page camera-ready PDF report -> {out_pdf}...")
     
     with PdfPages(out_pdf) as pdf:

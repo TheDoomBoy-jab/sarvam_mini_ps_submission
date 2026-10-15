@@ -1,6 +1,6 @@
 {
   "policy": "Meta_Seamless",
-  "policy_source": "/Users/aahannayak/sarvam/code/results/phase4_latency_metrics.json",
+  "policy_source": "code/results/phase4_latency_metrics.json",
   "audio": "synthetic_noise",
   "speed": 1.0,
   "replay_of_benchmark_sentence": true,
@@ -45,8 +45,8 @@
     "stream_ended_before_source_fully_read": false,
     "first_emission_audio_ms": 1280,
     "last_emission_audio_ms": 4160,
-    "mean_processing_lag_ms": 3.5,
-    "max_processing_lag_ms": 5.6,
+    "mean_processing_lag_ms": 4.0,
+    "max_processing_lag_ms": 6.6,
     "frame_ms": 80
   },
   "rollout_log": [
@@ -59,8 +59,8 @@
       "required_source_words": 3,
       "source_words_read": 3,
       "audio_ms": 1280,
-      "wall_ms": 1283.6,
-      "processing_lag_ms": 3.6,
+      "wall_ms": 1284.6,
+      "processing_lag_ms": 4.6,
       "context_rms_dbfs": -26.4,
       "flushed_at_end_of_stream": false
     },
@@ -73,8 +73,8 @@
       "required_source_words": 4,
       "source_words_read": 4,
       "audio_ms": 1680,
-      "wall_ms": 1681.1,
-      "processing_lag_ms": 1.1,
+      "wall_ms": 1683.9,
+      "processing_lag_ms": 3.9,
       "context_rms_dbfs": -26.3,
       "flushed_at_end_of_stream": false
     },
@@ -87,8 +87,8 @@
       "required_source_words": 5,
       "source_words_read": 5,
       "audio_ms": 2080,
-      "wall_ms": 2082.4,
-      "processing_lag_ms": 2.4,
+      "wall_ms": 2084.7,
+      "processing_lag_ms": 4.7,
       "context_rms_dbfs": -26.5,
       "flushed_at_end_of_stream": false
     },
@@ -103,8 +103,8 @@
       "required_source_words": 6,
       "source_words_read": 6,
       "audio_ms": 2480,
-      "wall_ms": 2485.6,
-      "processing_lag_ms": 5.6,
+      "wall_ms": 2483.0,
+      "processing_lag_ms": 3.0,
       "context_rms_dbfs": -26.5,
       "flushed_at_end_of_stream": false
     },
@@ -117,8 +117,8 @@
       "required_source_words": 8,
       "source_words_read": 8,
       "audio_ms": 3280,
-      "wall_ms": 3283.9,
-      "processing_lag_ms": 3.9,
+      "wall_ms": 3281.4,
+      "processing_lag_ms": 1.4,
       "context_rms_dbfs": -26.4,
       "flushed_at_end_of_stream": false
     },
@@ -131,8 +131,8 @@
       "required_source_words": 10,
       "source_words_read": 10,
       "audio_ms": 4160,
-      "wall_ms": 4164.5,
-      "processing_lag_ms": 4.5,
+      "wall_ms": 4166.6,
+      "processing_lag_ms": 6.6,
       "context_rms_dbfs": -27.3,
       "flushed_at_end_of_stream": false
     }

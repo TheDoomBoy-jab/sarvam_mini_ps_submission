@@ -8,25 +8,28 @@ All commands run deterministically using standard Python 3 / `uv`. Every reporte
 
 ## 0. Quick-Start: Single-Command Full Pipeline Reproduction
 
-From the repository root (`/Users/aahannayak/sarvam`):
+From the repository root:
 
 ```bash
-# 1. Verify environment & dependencies
-export PYTHONPATH="code:code/scripts:/Users/aahannayak/sarvam/.venv/lib/python3.14/site-packages"
+# 1. Verify environment & dependencies (Python 3.10+ / uv)
+# uv sync   # or: pip install -e .
 
-# 2. Phase 1: Acoustic Conditioning & DSP Sweet Spot
+# 2. Set PYTHONPATH (from repository root)
+export PYTHONPATH=".:code:code/scripts:$PYTHONPATH"
+
+# 3. Phase 1: Acoustic Conditioning & DSP Sweet Spot
 python3 code/scripts/acoustic_conditioning.py
 python3 code/scripts/audit_tts_audio.py
 
-# 3. Phase 2: Word Boundary Hand Audit (30 boundaries, bootstrap CI, signed bias)
+# 4. Phase 2: Word Boundary Hand Audit (30 boundaries, bootstrap CI, signed bias)
 python3 code/scripts/audit_boundaries.py report
 
-# 4. Phase 3: RGNPE Engine, 42-Edge-Case Test Suite, & 5 Acoustic Stress Tests
+# 5. Phase 3: RGNPE Engine, 42-Edge-Case Test Suite, & 5 Acoustic Stress Tests
 python3 code/scripts/rgnpe_engine.py
 python3 code/tests/test_rgnpe_edge_cases.py
 python3 code/scripts/run_stress_tests.py
 
-# 5. Phase 4: Wait-k Simulation, Pareto Frontier Plot, & Measured Streaming Rollout
+# 6. Phase 4: Wait-k Simulation, Pareto Frontier Plot, & Measured Streaming Rollout
 python3 code/scripts/wait_k_simulation.py
 python3 code/scripts/streaming_rollout.py
 ```
@@ -160,6 +163,26 @@ Tested against real acoustic corruptions synthesized into 24 kHz WAVs (`code/dat
 - **Target (English SVO, $|y|=8$, $\gamma=0.80$):** *"I closed my old bank account yesterday ."*
 - **Topicalized Target (Our Architecture, $|y|=8$):** *"My old bank account yesterday I closed ."*
 
+### Mandatory Wait-3 Schedule & Handwritten Appendix Proof (Part A)
+Per the problem statement requirement (*"In the appendix, handwritten: for 'मैंने कल अपना पुराना बैंक खाता बंद करवा दिया', write the wait-3 output schedule and compute its Average Lagging"*), the verified handwritten derivation is preserved in [`code/results/appendix_wait3_handwritten.png`](results/appendix_wait3_handwritten.png):
+
+| Target Step $t$ | Emitted Token $y_t$ | Source Read $g(t)$ | Physical Read Time $d(t)$ | Ideal Pace $(t-1)/\gamma$ | Step Lag $g(t) - (t-1)/\gamma$ | Note / Linguistic Status |
+| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| $1$ | *I* | $3$ (*अपना*) | $1,230\text{ ms}$ | $0.00$ | $+3.00$ | Begins after hearing subject/possessive |
+| $2$ | *closed* | $4$ (*पुराना*) | $1,640\text{ ms}$ | $1.25$ | $+2.75$ | **PREMATURE EMISSION (Verb Cliff!)** |
+| $3$ | *my* | $5$ (*बैंक*) | $2,050\text{ ms}$ | $2.50$ | $+2.50$ | Monotonic nominal chunk |
+| $4$ | *old* | $6$ (*खाता*) | $2,460\text{ ms}$ | $3.75$ | $+2.25$ | Nominal modifier |
+| $5$ | *bank* | $7$ (*बंद*) | $2,870\text{ ms}$ | $5.00$ | $+2.00$ | Compound head arrives |
+| $6$ | *account* | $8$ (*करवा*) | $3,280\text{ ms}$ | $6.25$ | $+1.75$ | Direct object completed |
+| $7$ | *yesterday* | $9$ (*दिया*) | $3,690\text{ ms}$ | $7.50$ | $+1.50$ | Temporal adverb fronting delayed |
+| $8$ | *.* | $10$ (*।*) | $4,100\text{ ms}$ | $8.75$ | $+1.25$ | End-of-sentence punctuation ($\tau = 8$) |
+
+$$\text{AL} = \frac{1}{8} \sum_{t=1}^{8} \left( g(t) - \frac{t-1}{0.80} \right) = \frac{17.0}{8} = \mathbf{2.125\text{ tokens}} \implies \mathbf{871.2\text{ ms}}$$
+$$\text{AP} = \frac{1}{10 \times 8} \sum_{t=1}^{8} g(t) = \frac{52}{80} = \mathbf{0.650}$$
+
+> [!NOTE]
+> **Acoustic handwritten sheet:** See high-resolution scan at [`code/results/appendix_wait3_handwritten.png`](results/appendix_wait3_handwritten.png).
+
 ### Research Basis: Human Brain Cognitive Parallel (Gile's Effort Model & Working Memory)
 Why does Fixed Wait-$k$ fail on Hindi? In cognitive psychology and simultaneous conference interpretation, human working memory (phonological loop) cannot store more than 3–5 seconds of incoming speech without cognitive overload (Gile's Effort Model). 
 
@@ -214,6 +237,7 @@ Measured dynamically over real-time 80 ms audio frames in `code/scripts/streamin
 | `code/results/phase4_latency_metrics.json`| Exact token AL, time AL, AP, premature rates, and Pareto flags | `wait_k_simulation.py` |
 | `code/results/latency_vs_accuracy.png` | Publication-quality 300 DPI plot of AL vs Quality & Premature Emission | `wait_k_simulation.py` |
 | `code/results/phase4_streaming_rollout.json`| Physical audio-clock and wall-clock emission timestamps | `streaming_rollout.py` |
+| `code/results/appendix_wait3_handwritten.png` | High-resolution scan of handwritten Wait-3 output schedule & AL proof | Part A Appendix Requirement |
 
 ---
 
