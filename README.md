@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 This repository contains the complete, production-grade submission for the **Sarvam.ai Mini Problem Statement (Inter IIT Tech Meet 15.0)**: a causal, simultaneous speech-to-speech translation (S2ST) pipeline for conversational Hindi-English speech with strict Indian numeral entity locking, self-correction handling, and sub-second streaming latency.
 
@@ -23,7 +23,7 @@ This repository contains the complete, production-grade submission for the **Sar
 
 ---
 
-## 🚀 Quick-Start: Single-Command Full Pipeline Reproduction
+##  Quick-Start: Single-Command Full Pipeline Reproduction
 
 Every metric, figure, and table reported in the 4-page submission PDF can be reproduced deterministically with standard Python 3:
 
@@ -49,7 +49,7 @@ For complete per-metric reproduction commands and mathematical proofs, see **[`c
 
 ---
 
-## 📝 Part A Mandatory Handwritten Appendix Scan
+## Part A Mandatory Handwritten Appendix Scan
 
 Per the problem statement specification (*"In the appendix, handwritten: for 'मैंने कल अपना पुराना बैंक खाता बंद करवा दिया', write the wait-3 output schedule and compute its Average Lagging"*):
 
@@ -63,7 +63,7 @@ Per the problem statement specification (*"In the appendix, handwritten: for '�
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -116,7 +116,7 @@ Per the problem statement specification (*"In the appendix, handwritten: for '�
 
 ---
 
-## 🎙️ Live Interview Demonstration & Testing on New Clips
+##  Live Interview Demonstration & Testing on New Clips
 
 The challenge rules state: *"in the interview you will run your code on a new clip and explain every part of it."*
 
@@ -138,7 +138,7 @@ python3 code/scripts/interactive_test.py "अकाउंट में पच्
 
 ---
 
-## 📊 Benchmark Summary: Policy Latency & Pareto Frontier
+##  Benchmark Summary: Policy Latency & Pareto Frontier
 
 Evaluated across 11 streaming policies on the benchmark utterance (*"मैंने कल अपना पुराना बैंक खाता बंद करवा दिया ।"*):
 
@@ -158,6 +158,6 @@ Evaluated across 11 streaming policies on the benchmark utterance (*"मैं�
 
 ---
 
-## 📄 License & Attribution
+##  License & Attribution
 - Built for **Inter IIT Tech Meet 15.0 – Sarvam.ai Challenge**.
 - Code released under the [MIT License](LICENSE).
