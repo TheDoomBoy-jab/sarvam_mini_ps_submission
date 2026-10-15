@@ -5,7 +5,7 @@ A complete, end-to-end, causal simultaneous speech-to-speech translation pipelin
 
 ---
 
-## 🚀 Quick Reproduction
+##  Quick Reproduction
 To reproduce all results, metrics, and figures with a single command suite, see **[`RESULTS.md`](RESULTS.md)**:
 
 ```bash
@@ -24,7 +24,7 @@ python3 code/scripts/streaming_rollout.py
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 code/
@@ -67,7 +67,7 @@ code/
 
 ---
 
-## 📦 Model Artifacts & DVC Tracking
+##  Model Artifacts & DVC Tracking
 
 The **Meta MMS 300M CTC Trellis Forced Alignment model** ($1,203.6\text{ MB}$) is tracked via **DVC (Data Version Control)** to keep the Git repository lightweight ($< 5\text{ MB}$) while ensuring deterministic artifact versioning.
 
@@ -82,7 +82,7 @@ dvc pull code/models/mms_fa/mms_300m.pt.dvc
 
 ---
 
-## 🏆 Key Achievements & Benchmarks
+##  Key Achievements & Benchmarks
 1. **Acoustic Conditioning (Phase 1):** Zero remainder samples across all 6 master clips when framed into 80 ms chunks ($1,920$ samples at $24\text{ kHz}$), $-20.00\text{ LUFS} \pm 0.02$, peak level $\le -1.06\text{ dBTP}$.
 2. **CTC Alignment & Audit (Phase 2):** $193/193$ words aligned ($100.0\%$). Hand audit of $30$ boundaries shows $\text{MAE} = 19.8\text{ ms}$ ($95\%$ CI $[14.6, 25.4]\text{ ms}$, signed bias $-11.8\text{ ms}$), with $100\%$ of boundaries within the $80\text{ ms}$ frame.
 3. **Entity Locking (Phase 3):** $42/42$ unit tests passed ($100.0\%$), $5/5$ acoustic stress tests passed ($100.0\%$), and $6/6$ manifest verification checks passed ($100.0\%$). Zero entity drops on *lakh*, *crore*, and 10-digit phone numbers.
