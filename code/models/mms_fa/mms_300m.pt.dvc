@@ -1,0 +1,5 @@
+outs:
+- md5: 8b6b7d3d931ea070ef4a69538d2c6f30
+  size: 1262047414
+  hash: md5
+  path: mms_300m.pt

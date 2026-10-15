@@ -1,0 +1,28 @@
+[project]
+name = "code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "aahan", email = "aahannayak86@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "edge-tts>=7.3.1",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "pyloudnorm>=0.2.0",
+    "pypdf>=6.20.1",
+    "scipy>=1.18.1",
+    "soundfile>=0.14.0",
+    "torch>=2.14.1",
+    "torchaudio>=2.11.0",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+code = "code:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"

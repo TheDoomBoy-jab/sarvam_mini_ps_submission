@@ -1,0 +1,359 @@
+[
+  {
+    "id": "rec_000001",
+    "audio": "audio/rec_000001.wav",
+    "duration": 19.68,
+    "speaker_id": "spk_male_human_01",
+    "source": {
+      "corpus": "sarvam_dev_audited",
+      "source_file": "clip_01_male_transfer.wav",
+      "start": 0.0,
+      "end": 19.68,
+      "synthetic": false
+    },
+    "sentences": [
+      {
+        "hi_text": "अरे सुनो म म मुझे ना राहुल शर्मा के अकाउंट में मतलब पच्चीस लाख अरे नहीं नहीं वेट पच्चीस नहीं पैंतीस लाख रुपये ट्रांसफर करवाने थे लेकिन मेरे फोन पे ना कोई ओटीपी आया ही नहीं।",
+        "hi_start": 0.0,
+        "hi_end": 19.68,
+        "en_text": "Listen, I wanted to transfer thirty-five lakh rupees to Rahul Sharma's account, but I didn't receive any OTP on my phone.",
+        "en_alt": [
+          "Listen, into Rahul Sharma's account, meaning thirty-five lakh rupees, I wanted to transfer, but on my phone, no OTP arrived at all."
+        ]
+      }
+    ],
+    "entities_locked": {
+      "SLOT_AMOUNT_1": "thirty-five lakh"
+    },
+    "entities_retracted": {
+      "SLOT_AMOUNT_0": "twenty-five lakh"
+    },
+    "translation_method": "en_text:authored|en_alt:authored",
+    "rgnpe": {
+      "entities": [
+        {
+          "kind": "amount",
+          "status": "retracted",
+          "hi_text": "पच्चीस लाख",
+          "value_inr": 2500000,
+          "display": "twenty-five lakh",
+          "in_source": true,
+          "slot_id": "SLOT_AMOUNT_0"
+        },
+        {
+          "kind": "amount",
+          "status": "committed",
+          "hi_text": "पैंतीस लाख",
+          "value_inr": 3500000,
+          "display": "thirty-five lakh",
+          "in_source": true,
+          "slot_id": "SLOT_AMOUNT_1"
+        }
+      ],
+      "hi_masked": "अरे सुनो म म मुझे ना राहुल शर्मा के अकाउंट में मतलब <span translate=\"no\" class=\"notranslate\" id=\"SLOT_AMOUNT_0\">SLOT_AMOUNT_0</span> अरे नहीं नहीं वेट पच्चीस नहीं <span translate=\"no\" class=\"notranslate\" id=\"SLOT_AMOUNT_1\">SLOT_AMOUNT_1</span> रुपये ट्रांसफर करवाने थे लेकिन मेरे फोन पे ना कोई ओटीपी आया ही नहीं।",
+      "provenance": {
+        "en_text": "authored",
+        "en_alt": "authored"
+      },
+      "verification": {
+        "ok": true,
+        "problems": [],
+        "polarity": {
+          "source_negative": true,
+          "en_text_negative": true,
+          "en_alt_negative": true
+        }
+      }
+    }
+  },
+  {
+    "id": "rec_000002",
+    "audio": "audio/rec_000002.wav",
+    "duration": 15.04,
+    "speaker_id": "spk_female_eleven_01",
+    "source": {
+      "corpus": "sarvam_dev_audited",
+      "source_file": "clip_02_female_phone.wav",
+      "start": 0.0,
+      "end": 15.04,
+      "synthetic": true
+    },
+    "sentences": [
+      {
+        "hi_text": "मेरा रजिस्टर्ड मोबाइल नंबर अह्ह नोट करो नौ आठ दो शून्य चार एक पाँच छह सात आठ पर बैंक वालों ने ना मेरा खाता अनफ्रीज करवाने के बाद भी कोई कन्फर्मेशन मैसेज नहीं भेजा।",
+        "hi_start": 0.0,
+        "hi_end": 15.04,
+        "en_text": "My registered mobile number is 98204 15678, but the bank hasn't sent any confirmation message even after unfreezing my account.",
+        "en_alt": [
+          "My registered mobile number, note down 98204 15678, but from the bank people, even after unfreezing my account, no confirmation message was sent."
+        ]
+      }
+    ],
+    "entities_locked": {
+      "SLOT_PHONE_0": "98204 15678"
+    },
+    "entities_retracted": {},
+    "translation_method": "en_text:authored|en_alt:authored",
+    "rgnpe": {
+      "entities": [
+        {
+          "kind": "phone",
+          "status": "committed",
+          "digits": "9820415678",
+          "display": "98204 15678",
+          "hi_text": "नौ आठ दो शून्य चार एक पाँच छह सात आठ",
+          "in_source": true,
+          "slot_id": "SLOT_PHONE_0"
+        }
+      ],
+      "hi_masked": "मेरा रजिस्टर्ड मोबाइल नंबर अह्ह नोट करो <span translate=\"no\" class=\"notranslate\" id=\"SLOT_PHONE_0\">SLOT_PHONE_0</span> पर बैंक वालों ने ना मेरा खाता अनफ्रीज करवाने के बाद भी कोई कन्फर्मेशन मैसेज नहीं भेजा।",
+      "provenance": {
+        "en_text": "authored",
+        "en_alt": "authored"
+      },
+      "verification": {
+        "ok": true,
+        "problems": [],
+        "polarity": {
+          "source_negative": true,
+          "en_text_negative": true,
+          "en_alt_negative": true
+        }
+      }
+    }
+  },
+  {
+    "id": "rec_000003",
+    "audio": "audio/rec_000003.wav",
+    "duration": 16.56,
+    "speaker_id": "spk_male_human_01",
+    "source": {
+      "corpus": "sarvam_dev_audited",
+      "source_file": "clip_03_male_property.wav",
+      "start": 0.0,
+      "end": 16.56,
+      "synthetic": false
+    },
+    "sentences": [
+      {
+        "hi_text": "उन्होंने वसंत कुंज वाली प्रॉपर्टी का ना पहले डेढ़ करोड़ रुपये कोट किया था हा हा अरे सीरियसली पर बाद में हमने नेगोशिएट करके एक करोड़ बीस लाख में डील फाइनल करवा ली।",
+        "hi_start": 0.0,
+        "hi_end": 16.56,
+        "en_text": "They initially quoted 1.5 crore rupees for the Vasant Kunj property—haha, seriously—but later we negotiated and finalized the deal at one crore twenty lakh.",
+        "en_alt": [
+          "For the Vasant Kunj property, they earlier quoted 1.5 crore rupees, haha seriously, but later after negotiating, we finalized the deal at one crore twenty lakh."
+        ]
+      }
+    ],
+    "entities_locked": {
+      "SLOT_AMOUNT_0": "1.5 crore",
+      "SLOT_AMOUNT_1": "one crore twenty lakh"
+    },
+    "entities_retracted": {},
+    "translation_method": "en_text:authored|en_alt:authored",
+    "rgnpe": {
+      "entities": [
+        {
+          "kind": "amount",
+          "status": "committed",
+          "hi_text": "डेढ़ करोड़",
+          "value_inr": 15000000,
+          "display": "1.5 crore",
+          "in_source": true,
+          "slot_id": "SLOT_AMOUNT_0"
+        },
+        {
+          "kind": "amount",
+          "status": "committed",
+          "hi_text": "एक करोड़ बीस लाख",
+          "value_inr": 12000000,
+          "display": "one crore twenty lakh",
+          "in_source": true,
+          "slot_id": "SLOT_AMOUNT_1"
+        }
+      ],
+      "hi_masked": "उन्होंने वसंत कुंज वाली प्रॉपर्टी का ना पहले <span translate=\"no\" class=\"notranslate\" id=\"SLOT_AMOUNT_0\">SLOT_AMOUNT_0</span> रुपये कोट किया था हा हा अरे सीरियसली पर बाद में हमने नेगोशिएट करके <span translate=\"no\" class=\"notranslate\" id=\"SLOT_AMOUNT_1\">SLOT_AMOUNT_1</span> में डील फाइनल करवा ली।",
+      "provenance": {
+        "en_text": "authored",
+        "en_alt": "authored"
+      },
+      "verification": {
+        "ok": true,
+        "problems": [],
+        "polarity": {
+          "source_negative": false,
+          "en_text_negative": false,
+          "en_alt_negative": false
+        }
+      }
+    }
+  },
+  {
+    "id": "rec_000004",
+    "audio": "audio/rec_000004.wav",
+    "duration": 11.28,
+    "speaker_id": "spk_female_eleven_02",
+    "source": {
+      "corpus": "sarvam_dev_audited",
+      "source_file": "clip_04_female_cheque.wav",
+      "start": 0.0,
+      "end": 11.28,
+      "synthetic": true
+    },
+    "sentences": [
+      {
+        "hi_text": "प्लीज वो चेक नंबर चार पाँच दो एक शून्य तीन का पेमेंट स्टॉप करवा अरे सॉरी सॉरी वो चेक तो ऑलरेडी क्लियर हो चुका है उसको कैंसल वैंसल मत करना।",
+        "hi_start": 0.0,
+        "hi_end": 11.28,
+        "en_text": "That cheque number 452103 has already cleared, so please do not cancel or stop payment on it.",
+        "en_alt": [
+          "Regarding cheque number 452103, it has already cleared, so do not stop or cancel the payment at all."
+        ]
+      }
+    ],
+    "entities_locked": {
+      "SLOT_CHEQUE_0": "452103"
+    },
+    "entities_retracted": {},
+    "translation_method": "en_text:authored|en_alt:authored",
+    "rgnpe": {
+      "entities": [
+        {
+          "kind": "cheque",
+          "status": "committed",
+          "digits": "452103",
+          "display": "452103",
+          "hi_text": "चार पाँच दो एक शून्य तीन",
+          "in_source": true,
+          "slot_id": "SLOT_CHEQUE_0"
+        }
+      ],
+      "hi_masked": "प्लीज वो चेक नंबर <span translate=\"no\" class=\"notranslate\" id=\"SLOT_CHEQUE_0\">SLOT_CHEQUE_0</span> का पेमेंट स्टॉप करवा अरे सॉरी सॉरी वो चेक तो ऑलरेडी क्लियर हो चुका है उसको कैंसल वैंसल मत करना।",
+      "provenance": {
+        "en_text": "authored",
+        "en_alt": "authored"
+      },
+      "verification": {
+        "ok": true,
+        "problems": [],
+        "polarity": {
+          "source_negative": true,
+          "en_text_negative": true,
+          "en_alt_negative": true
+        }
+      }
+    }
+  },
+  {
+    "id": "rec_000005",
+    "audio": "audio/rec_000005.wav",
+    "duration": 13.76,
+    "speaker_id": "spk_male_eleven_03",
+    "source": {
+      "corpus": "sarvam_dev_audited",
+      "source_file": "clip_05_male_account.wav",
+      "start": 0.0,
+      "end": 13.76,
+      "synthetic": true
+    },
+    "sentences": [
+      {
+        "hi_text": "मेरा नया सेविंग्स खाता नंबर है उम्म तीन शून्य नौ आठ सात छह पाँच चार तीन दो एक शून्य और सुनो उसपे पुराना डेबिट कार्ड लिंक मत कर देना गलती से भी।",
+        "hi_start": 0.0,
+        "hi_end": 13.76,
+        "en_text": "My new savings account number is 3098 7654 3210, and please do not link the old debit card to it even by mistake.",
+        "en_alt": [
+          "My new savings account number is, 3098 7654 3210, and listen, do not link the old debit card to it, even by mistake."
+        ]
+      }
+    ],
+    "entities_locked": {
+      "SLOT_ACCOUNT_0": "3098 7654 3210"
+    },
+    "entities_retracted": {},
+    "translation_method": "en_text:authored|en_alt:authored",
+    "rgnpe": {
+      "entities": [
+        {
+          "kind": "account",
+          "status": "committed",
+          "digits": "309876543210",
+          "display": "3098 7654 3210",
+          "hi_text": "तीन शून्य नौ आठ सात छह पाँच चार तीन दो एक शून्य",
+          "in_source": true,
+          "slot_id": "SLOT_ACCOUNT_0"
+        }
+      ],
+      "hi_masked": "मेरा नया सेविंग्स खाता नंबर है उम्म <span translate=\"no\" class=\"notranslate\" id=\"SLOT_ACCOUNT_0\">SLOT_ACCOUNT_0</span> और सुनो उसपे पुराना डेबिट कार्ड लिंक मत कर देना गलती से भी।",
+      "provenance": {
+        "en_text": "authored",
+        "en_alt": "authored"
+      },
+      "verification": {
+        "ok": true,
+        "problems": [],
+        "polarity": {
+          "source_negative": true,
+          "en_text_negative": true,
+          "en_alt_negative": true
+        }
+      }
+    }
+  },
+  {
+    "id": "rec_000006",
+    "audio": "audio/rec_000006.wav",
+    "duration": 10.24,
+    "speaker_id": "spk_female_eleven_04",
+    "source": {
+      "corpus": "sarvam_dev_audited",
+      "source_file": "clip_06_female_investment.wav",
+      "start": 0.0,
+      "end": 10.24,
+      "synthetic": true
+    },
+    "sentences": [
+      {
+        "hi_text": "म्यूचुअल फंड्स में ना बेसिकली मैंने पिछले महीने दस लाख रुपये इन्वेस्ट वाए थे पर इस बार मार्केट डाउन है तो मुझे कोई नया इन्वेस्टमेंट बिल्कुल नहीं करना।",
+        "hi_start": 0.0,
+        "hi_end": 10.24,
+        "en_text": "I basically invested ten lakh rupees in mutual funds last month, but since the market is down now, I definitely do not want to make any new investment.",
+        "en_alt": [
+          "In mutual funds basically, last month I invested ten lakh rupees, but this time the market is down, so I will definitely not do any new investment."
+        ]
+      }
+    ],
+    "entities_locked": {
+      "SLOT_AMOUNT_0": "ten lakh"
+    },
+    "entities_retracted": {},
+    "translation_method": "en_text:authored|en_alt:authored",
+    "rgnpe": {
+      "entities": [
+        {
+          "kind": "amount",
+          "status": "committed",
+          "hi_text": "दस लाख",
+          "value_inr": 1000000,
+          "display": "ten lakh",
+          "in_source": true,
+          "slot_id": "SLOT_AMOUNT_0"
+        }
+      ],
+      "hi_masked": "म्यूचुअल फंड्स में ना बेसिकली मैंने पिछले महीने <span translate=\"no\" class=\"notranslate\" id=\"SLOT_AMOUNT_0\">SLOT_AMOUNT_0</span> रुपये इन्वेस्ट वाए थे पर इस बार मार्केट डाउन है तो मुझे कोई नया इन्वेस्टमेंट बिल्कुल नहीं करना।",
+      "provenance": {
+        "en_text": "authored",
+        "en_alt": "authored"
+      },
+      "verification": {
+        "ok": true,
+        "problems": [],
+        "polarity": {
+          "source_negative": true,
+          "en_text_negative": true,
+          "en_alt_negative": true
+        }
+      }
+    }
+  }
+]

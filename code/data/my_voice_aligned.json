@@ -1,0 +1,302 @@
+{
+  "id": "my_voice_01",
+  "clip_file": "my_voice_standardized.wav",
+  "duration_sec": 14.48,
+  "alignment_method": "mms_ctc_trellis",
+  "mean_acoustic_score": 0.881,
+  "total_words": 25,
+  "aligned_words_count": 25,
+  "unaligned_words_count": 0,
+  "breakers": [
+    {
+      "meta_idx": 1,
+      "marker": "बोली थी पर हमने नेगोशिएट करके",
+      "marker_start": 7.51,
+      "marker_end": 9.894,
+      "safe_to_speak_sec": 12.177,
+      "safe_confidence": "high",
+      "timing_note": "exact_committed_end",
+      "breaker_acoustic_score": 0.936,
+      "has_unaligned_word": false
+    }
+  ],
+  "unmatched_markers": [],
+  "unmatched_phrases": [],
+  "words": [
+    {
+      "w": "अरे",
+      "w_norm": "अरे",
+      "roman": "are",
+      "aligned": true,
+      "start": 1.362,
+      "end": 1.542,
+      "score": 0.895,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "सुनो",
+      "w_norm": "सुनो",
+      "roman": "suno",
+      "aligned": true,
+      "start": 1.542,
+      "end": 1.682,
+      "score": 0.0,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "वो",
+      "w_norm": "वो",
+      "roman": "vo",
+      "aligned": true,
+      "start": 1.702,
+      "end": 1.782,
+      "score": 0.887,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "वसंत",
+      "w_norm": "वसंत",
+      "roman": "vasamt",
+      "aligned": true,
+      "start": 1.923,
+      "end": 2.303,
+      "score": 0.867,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "कुंज",
+      "w_norm": "कुंज",
+      "roman": "kumj",
+      "aligned": true,
+      "start": 2.383,
+      "end": 2.764,
+      "score": 0.855,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "वाली",
+      "w_norm": "वाली",
+      "roman": "vaalii",
+      "aligned": true,
+      "start": 4.927,
+      "end": 5.207,
+      "score": 0.972,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "प्रॉपर्टी",
+      "w_norm": "प्रॉपर्टी",
+      "roman": "proparttii",
+      "aligned": true,
+      "start": 5.207,
+      "end": 5.668,
+      "score": 0.911,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "ना",
+      "w_norm": "ना",
+      "roman": "naa",
+      "aligned": true,
+      "start": 5.708,
+      "end": 5.848,
+      "score": 0.67,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "पहले",
+      "w_norm": "पहले",
+      "roman": "pahale",
+      "aligned": true,
+      "start": 5.948,
+      "end": 6.209,
+      "score": 0.98,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "उन्होंने",
+      "w_norm": "उन्होंने",
+      "roman": "unhomne",
+      "aligned": true,
+      "start": 6.329,
+      "end": 6.629,
+      "score": 0.956,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "पौने",
+      "w_norm": "पौने",
+      "roman": "paune",
+      "aligned": true,
+      "start": 6.709,
+      "end": 6.97,
+      "score": 0.975,
+      "is_breaker": false,
+      "status": "abandoned_entity"
+    },
+    {
+      "w": "दो",
+      "w_norm": "दो",
+      "roman": "do",
+      "aligned": true,
+      "start": 7.03,
+      "end": 7.13,
+      "score": 0.836,
+      "is_breaker": false,
+      "status": "abandoned_entity"
+    },
+    {
+      "w": "करोड़",
+      "w_norm": "करोड़",
+      "roman": "karodd",
+      "aligned": true,
+      "start": 7.19,
+      "end": 7.47,
+      "score": 0.911,
+      "is_breaker": false,
+      "status": "abandoned_entity"
+    },
+    {
+      "w": "बोली",
+      "w_norm": "बोली",
+      "roman": "bolii",
+      "aligned": true,
+      "start": 7.51,
+      "end": 7.751,
+      "score": 0.993,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "थी",
+      "w_norm": "थी",
+      "roman": "thii",
+      "aligned": true,
+      "start": 7.771,
+      "end": 7.931,
+      "score": 0.993,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "पर",
+      "w_norm": "पर",
+      "roman": "par",
+      "aligned": true,
+      "start": 8.472,
+      "end": 8.592,
+      "score": 0.995,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "हमने",
+      "w_norm": "हमने",
+      "roman": "hamane",
+      "aligned": true,
+      "start": 8.652,
+      "end": 8.872,
+      "score": 0.96,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "नेगोशिएट",
+      "w_norm": "नेगोशिएट",
+      "roman": "negoshiett",
+      "aligned": true,
+      "start": 8.972,
+      "end": 9.573,
+      "score": 0.847,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "करके",
+      "w_norm": "करके",
+      "roman": "karake",
+      "aligned": true,
+      "start": 9.633,
+      "end": 9.894,
+      "score": 0.76,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "सवा",
+      "w_norm": "सवा",
+      "roman": "savaa",
+      "aligned": true,
+      "start": 10.014,
+      "end": 10.354,
+      "score": 0.915,
+      "is_breaker": false,
+      "status": "committed_entity"
+    },
+    {
+      "w": "करोड़",
+      "w_norm": "करोड़",
+      "roman": "karodd",
+      "aligned": true,
+      "start": 10.755,
+      "end": 11.155,
+      "score": 0.949,
+      "is_breaker": false,
+      "status": "committed_entity"
+    },
+    {
+      "w": "में",
+      "w_norm": "में",
+      "roman": "mem",
+      "aligned": true,
+      "start": 11.215,
+      "end": 11.336,
+      "score": 0.989,
+      "is_breaker": false,
+      "status": "committed_entity"
+    },
+    {
+      "w": "फिक्स",
+      "w_norm": "फिक्स",
+      "roman": "phiksa",
+      "aligned": true,
+      "start": 11.416,
+      "end": 11.696,
+      "score": 0.992,
+      "is_breaker": false,
+      "status": "committed_entity"
+    },
+    {
+      "w": "करवा",
+      "w_norm": "करवा",
+      "roman": "karavaa",
+      "aligned": true,
+      "start": 11.716,
+      "end": 11.997,
+      "score": 0.936,
+      "is_breaker": false,
+      "status": "committed_entity"
+    },
+    {
+      "w": "दी",
+      "w_norm": "दी",
+      "roman": "dii",
+      "aligned": true,
+      "start": 12.037,
+      "end": 12.177,
+      "score": 0.986,
+      "is_breaker": false,
+      "status": "committed_entity"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+code/.venv/
+venv/
+env/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large Model Checkpoints (Tracked via DVC *.dvc)
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.h5
+
+# DVC local files
+.dvc/cache
+.dvc/tmp
+
+# Temporary artifacts and scratch files
+test_pdf.pdf
+/tmp/
+.matplotlib/
+code/results/chrome_profile/
+code/results/test_matplotlib.pdf

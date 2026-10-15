@@ -1,0 +1,363 @@
+{
+  "id": "rec_000004",
+  "clip_file": "clip_04_female_cheque.wav",
+  "duration_sec": 11.28,
+  "alignment_method": "mms_ctc_trellis",
+  "mean_acoustic_score": 0.818,
+  "total_words": 30,
+  "aligned_words_count": 30,
+  "unaligned_words_count": 0,
+  "breakers": [
+    {
+      "meta_idx": 1,
+      "marker": "अरे सॉरी सॉरी",
+      "marker_start": 5.189,
+      "marker_end": 6.231,
+      "safe_to_speak_sec": 6.231,
+      "safe_confidence": "low_phrase_not_found",
+      "timing_note": "fallback_marker_end",
+      "breaker_acoustic_score": 0.889,
+      "has_unaligned_word": false
+    }
+  ],
+  "unmatched_markers": [],
+  "unmatched_phrases": [
+    {
+      "meta_idx": 1,
+      "type": "corrected",
+      "phrase": "ऑलरेडी क्लियर हो चुका है उसको मत रोकना"
+    }
+  ],
+  "words": [
+    {
+      "w": "प्लीज",
+      "w_norm": "प्लीज",
+      "roman": "pliij",
+      "aligned": true,
+      "start": 0.06,
+      "end": 0.361,
+      "score": 0.82,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "वो",
+      "w_norm": "वो",
+      "roman": "vo",
+      "aligned": true,
+      "start": 0.481,
+      "end": 0.561,
+      "score": 0.664,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "चेक",
+      "w_norm": "चेक",
+      "roman": "cek",
+      "aligned": true,
+      "start": 0.701,
+      "end": 0.902,
+      "score": 0.696,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "नंबर",
+      "w_norm": "नंबर",
+      "roman": "nambar",
+      "aligned": true,
+      "start": 1.002,
+      "end": 1.402,
+      "score": 0.982,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "चार",
+      "w_norm": "चार",
+      "roman": "caar",
+      "aligned": true,
+      "start": 2.124,
+      "end": 2.344,
+      "score": 0.13,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "पाँच",
+      "w_norm": "पाँच",
+      "roman": "paamc",
+      "aligned": true,
+      "start": 2.404,
+      "end": 2.605,
+      "score": 0.366,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "दो",
+      "w_norm": "दो",
+      "roman": "do",
+      "aligned": true,
+      "start": 2.665,
+      "end": 2.725,
+      "score": 0.37,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "एक",
+      "w_norm": "एक",
+      "roman": "ek",
+      "aligned": true,
+      "start": 2.825,
+      "end": 2.925,
+      "score": 0.732,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "शून्य",
+      "w_norm": "शून्य",
+      "roman": "shuunya",
+      "aligned": true,
+      "start": 2.985,
+      "end": 3.286,
+      "score": 0.83,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "तीन",
+      "w_norm": "तीन",
+      "roman": "tiin",
+      "aligned": true,
+      "start": 3.346,
+      "end": 3.506,
+      "score": 0.885,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "का",
+      "w_norm": "का",
+      "roman": "kaa",
+      "aligned": true,
+      "start": 3.566,
+      "end": 3.707,
+      "score": 0.982,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "पेमेंट",
+      "w_norm": "पेमेंट",
+      "roman": "pememtt",
+      "aligned": true,
+      "start": 3.767,
+      "end": 4.147,
+      "score": 0.967,
+      "is_breaker": false,
+      "status": "abandoned_entity"
+    },
+    {
+      "w": "स्टॉप",
+      "w_norm": "स्टॉप",
+      "roman": "sttop",
+      "aligned": true,
+      "start": 4.167,
+      "end": 4.468,
+      "score": 0.892,
+      "is_breaker": false,
+      "status": "abandoned_entity"
+    },
+    {
+      "w": "करवा",
+      "w_norm": "करवा",
+      "roman": "karavaa",
+      "aligned": true,
+      "start": 4.548,
+      "end": 4.869,
+      "score": 0.983,
+      "is_breaker": false,
+      "status": "abandoned_entity"
+    },
+    {
+      "w": "अरे",
+      "w_norm": "अरे",
+      "roman": "are",
+      "aligned": true,
+      "start": 5.189,
+      "end": 5.37,
+      "score": 0.916,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "सॉरी",
+      "w_norm": "सॉरी",
+      "roman": "sorii",
+      "aligned": true,
+      "start": 5.53,
+      "end": 5.85,
+      "score": 0.797,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "सॉरी",
+      "w_norm": "सॉरी",
+      "roman": "sorii",
+      "aligned": true,
+      "start": 5.89,
+      "end": 6.231,
+      "score": 0.778,
+      "is_breaker": true,
+      "status": "breaker_marker"
+    },
+    {
+      "w": "वो",
+      "w_norm": "वो",
+      "roman": "vo",
+      "aligned": true,
+      "start": 6.772,
+      "end": 6.852,
+      "score": 0.59,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "चेक",
+      "w_norm": "चेक",
+      "roman": "cek",
+      "aligned": true,
+      "start": 7.032,
+      "end": 7.213,
+      "score": 0.729,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "तो",
+      "w_norm": "तो",
+      "roman": "to",
+      "aligned": true,
+      "start": 7.273,
+      "end": 7.353,
+      "score": 0.952,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "ऑलरेडी",
+      "w_norm": "ऑलरेडी",
+      "roman": "olareddii",
+      "aligned": true,
+      "start": 7.473,
+      "end": 7.954,
+      "score": 0.725,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "क्लियर",
+      "w_norm": "क्लियर",
+      "roman": "kliyar",
+      "aligned": true,
+      "start": 7.974,
+      "end": 8.235,
+      "score": 0.985,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "हो",
+      "w_norm": "हो",
+      "roman": "ho",
+      "aligned": true,
+      "start": 8.275,
+      "end": 8.355,
+      "score": 0.971,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "चुका",
+      "w_norm": "चुका",
+      "roman": "cukaa",
+      "aligned": true,
+      "start": 8.435,
+      "end": 8.735,
+      "score": 0.966,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "है",
+      "w_norm": "है",
+      "roman": "hai",
+      "aligned": true,
+      "start": 8.776,
+      "end": 8.896,
+      "score": 0.995,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "उसको",
+      "w_norm": "उसको",
+      "roman": "usako",
+      "aligned": true,
+      "start": 9.236,
+      "end": 9.417,
+      "score": 0.993,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "कैंसल",
+      "w_norm": "कैंसल",
+      "roman": "kaimsal",
+      "aligned": true,
+      "start": 9.557,
+      "end": 9.998,
+      "score": 0.947,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "वैंसल",
+      "w_norm": "वैंसल",
+      "roman": "vaimsal",
+      "aligned": true,
+      "start": 10.058,
+      "end": 10.418,
+      "score": 0.932,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "मत",
+      "w_norm": "मत",
+      "roman": "mat",
+      "aligned": true,
+      "start": 10.479,
+      "end": 10.619,
+      "score": 0.981,
+      "is_breaker": false,
+      "status": "normal"
+    },
+    {
+      "w": "करना",
+      "w_norm": "करना",
+      "roman": "karanaa",
+      "aligned": true,
+      "start": 10.679,
+      "end": 11.0,
+      "score": 0.981,
+      "is_breaker": false,
+      "status": "normal"
+    }
+  ]
+}

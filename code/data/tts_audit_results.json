@@ -1,0 +1,62 @@
+[
+  {
+    "clip_id": "rec_000001",
+    "clip_file": "clip_01_male_transfer.wav",
+    "duration_sec": 19.68,
+    "peak_db": -1.83,
+    "char_rate": 7.0,
+    "status": "VERIFIED_CLEAN",
+    "failures": [],
+    "warnings": []
+  },
+  {
+    "clip_id": "rec_000002",
+    "clip_file": "clip_02_female_phone.wav",
+    "duration_sec": 15.04,
+    "peak_db": -3.38,
+    "char_rate": 8.6,
+    "status": "VERIFIED_CLEAN",
+    "failures": [],
+    "warnings": []
+  },
+  {
+    "clip_id": "rec_000003",
+    "clip_file": "clip_03_male_property.wav",
+    "duration_sec": 16.56,
+    "peak_db": -1.0,
+    "char_rate": 7.9,
+    "status": "VERIFIED_CLEAN",
+    "failures": [],
+    "warnings": []
+  },
+  {
+    "clip_id": "rec_000004",
+    "clip_file": "clip_04_female_cheque.wav",
+    "duration_sec": 11.28,
+    "peak_db": -1.68,
+    "char_rate": 9.7,
+    "status": "VERIFIED_CLEAN",
+    "failures": [],
+    "warnings": []
+  },
+  {
+    "clip_id": "rec_000005",
+    "clip_file": "clip_05_male_account.wav",
+    "duration_sec": 13.76,
+    "peak_db": -3.02,
+    "char_rate": 8.1,
+    "status": "VERIFIED_CLEAN",
+    "failures": [],
+    "warnings": []
+  },
+  {
+    "clip_id": "rec_000006",
+    "clip_file": "clip_06_female_investment.wav",
+    "duration_sec": 10.24,
+    "peak_db": -3.15,
+    "char_rate": 12.0,
+    "status": "VERIFIED_CLEAN",
+    "failures": [],
+    "warnings": []
+  }
+]

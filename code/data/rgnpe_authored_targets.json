@@ -1,0 +1,61 @@
+{
+  "_comment": "Hand-authored English targets for the Phase 3 benchmark clips. en_text commits only the corrected value (Sarvam §10 FAQ). en_alt_chunks are hand-written clause chunks in Hindi arrival order; they are NOT derived from CTC timestamps or from any streaming model. rgnpe_engine.py verifies every string here against the manifest entities before writing output.",
+  "rec_000001": {
+    "en_text": "Listen, I wanted to transfer thirty-five lakh rupees to Rahul Sharma's account, but I didn't receive any OTP on my phone.",
+    "en_alt_chunks": [
+      "Listen,",
+      "into Rahul Sharma's account,",
+      "meaning thirty-five lakh rupees,",
+      "I wanted to transfer,",
+      "but on my phone,",
+      "no OTP arrived at all."
+    ]
+  },
+  "rec_000002": {
+    "en_text": "My registered mobile number is 98204 15678, but the bank hasn't sent any confirmation message even after unfreezing my account.",
+    "en_alt_chunks": [
+      "My registered mobile number,",
+      "note down 98204 15678,",
+      "but from the bank people,",
+      "even after unfreezing my account,",
+      "no confirmation message was sent."
+    ]
+  },
+  "rec_000003": {
+    "en_text": "They initially quoted 1.5 crore rupees for the Vasant Kunj property—haha, seriously—but later we negotiated and finalized the deal at one crore twenty lakh.",
+    "en_alt_chunks": [
+      "For the Vasant Kunj property,",
+      "they earlier quoted 1.5 crore rupees,",
+      "haha seriously,",
+      "but later after negotiating,",
+      "we finalized the deal at one crore twenty lakh."
+    ]
+  },
+  "rec_000004": {
+    "en_text": "That cheque number 452103 has already cleared, so please do not cancel or stop payment on it.",
+    "en_alt_chunks": [
+      "Regarding cheque number 452103,",
+      "it has already cleared,",
+      "so do not stop or cancel the payment at all."
+    ]
+  },
+  "rec_000005": {
+    "en_text": "My new savings account number is 3098 7654 3210, and please do not link the old debit card to it even by mistake.",
+    "en_alt_chunks": [
+      "My new savings account number is,",
+      "3098 7654 3210,",
+      "and listen,",
+      "do not link the old debit card to it,",
+      "even by mistake."
+    ]
+  },
+  "rec_000006": {
+    "en_text": "I basically invested ten lakh rupees in mutual funds last month, but since the market is down now, I definitely do not want to make any new investment.",
+    "en_alt_chunks": [
+      "In mutual funds basically,",
+      "last month I invested ten lakh rupees,",
+      "but this time the market is down,",
+      "so I will definitely not do any new investment."
+    ]
+  }
+}

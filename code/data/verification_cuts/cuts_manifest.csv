@@ -1,0 +1,7 @@
+clip_id,breaker_idx,marker,breaker_score,safe_to_speak_val,confidence,has_unaligned,cut_file
+rec_000001,1,अरे नहीं नहीं वेट,0.408,12.112,low_marker_ambiguous,False,rec_000001_b1_low_marker_ambiguous.wav
+rec_000002,1,अह्ह नोट करो,0.726,3.905,low_marker_ambiguous,False,rec_000002_b1_low_marker_ambiguous.wav
+rec_000003,1,हा हा अरे सीरियसली,0.375,9.471,low_marker_ambiguous,False,rec_000003_b1_low_marker_ambiguous.wav
+rec_000004,1,अरे सॉरी सॉरी,0.889,6.231,low_phrase_not_found,False,rec_000004_b1_low_phrase_not_found.wav
+rec_000005,1,उम्म,0.464,3.105,low_marker_ambiguous,False,rec_000005_b1_low_marker_ambiguous.wav
+rec_000006,1,बेसिकली,0.859,2.124,low_marker_ambiguous,False,rec_000006_b1_low_marker_ambiguous.wav

@@ -1,0 +1,31 @@
+sample_id,clip_id,clip_file,word_idx,w1,w2,aligner_boundary_sec,human_boundary_sec,hand_check_sec,notes
+1,rec_000001,clip_01_male_transfer.wav,1,सुनो,म,0.821,0.880,0.884,Trailing vowel /o/ formants decay into 40ms silence before /m/ stutter
+2,rec_000001,clip_01_male_transfer.wav,6,राहुल,शर्मा,3.664,3.670,,Voiced lateral /l/ terminates into unvoiced /sh/ fricative noise
+3,rec_000001,clip_01_male_transfer.wav,7,शर्मा,के,4.024,4.026,4.028,Clear vowel cutoff into 36ms unvoiced stop closure before /k/ burst
+4,rec_000001,clip_01_male_transfer.wav,8,के,अकाउंट,4.124,4.168,4.172,Aligner placed mid-vowel; vocalic energy of /e/ sustained until 4.168s
+5,rec_000001,clip_01_male_transfer.wav,22,रुपये,ट्रांसफर,12.433,12.485,12.480,Glottal pulse decay of /e/ fades into unvoiced stop /t/ closure
+6,rec_000001,clip_01_male_transfer.wav,23,ट्रांसफर,करवाने,12.993,12.985,,Rhotic vowel energy drops into 85ms silence closure before /k/ burst
+7,rec_000001,clip_01_male_transfer.wav,26,लेकिन,मेरे,15.195,15.165,,Vowel formants of /i/ cut off at 15.165s before nasal murmur transition into /m/
+8,rec_000001,clip_01_male_transfer.wav,28,फोन,पे,16.237,16.265,,Nasal murmur of /n/ fades into silence before /p/ burst
+9,rec_000002,clip_02_female_phone.wav,0,मेरा,रजिस्टर्ड,0.481,0.484,,Clean vowel offset into unvoiced onset of /r/
+10,rec_000002,clip_02_female_phone.wav,15,सात,आठ,7.49,7.488,7.485,Clear 45ms silent gap between digit words
+11,rec_000002,clip_02_female_phone.wav,20,ने,ना,9.152,9.148,,Vowel /e/ glottal pulse energy drops at 9.148s before /n/ nasal murmur onset
+12,rec_000002,clip_02_female_phone.wav,21,ना,मेरा,9.453,9.475,,Vowel /a/ sustained before nasal closure of /m/
+13,rec_000002,clip_02_female_phone.wav,22,मेरा,खाता,9.693,9.695,9.698,Vowel energy drops into 50ms aspirated stop closure for /kh/
+14,rec_000002,clip_02_female_phone.wav,24,अनफ्रीज,करवाने,10.474,10.510,,Voiced fricative /z/ continues until silence closure for /k/
+15,rec_000002,clip_02_female_phone.wav,27,बाद,भी,11.255,11.235,,Plosive release into breath pause before /bh/
+16,rec_000003,clip_03_male_property.wav,2,कुंज,वाली,1.702,1.722,,Voiced affricate /j/ release trails into approximant /v/
+17,rec_000003,clip_03_male_property.wav,3,वाली,प्रॉपर्टी,2.022,2.048,,Vowel /i/ formants cut off abruptly at bilabial closure for /p/
+18,rec_000004,clip_04_female_cheque.wav,7,एक,शून्य,2.925,2.915,,Unvoiced velar stop burst /k/ ends into 30ms pre-fricative gap
+19,rec_000004,clip_04_female_cheque.wav,8,शून्य,तीन,3.286,3.310,,Vowel /a/ decays into silence before dental stop /t/ closure
+20,rec_000004,clip_04_female_cheque.wav,14,अरे,सॉरी,5.37,5.412,5.418,Self-repair disfluency; speaker elongates vowel /e/ before abrupt cutoff into apology
+21,rec_000005,clip_05_male_account.wav,0,मेरा,नया,0.3,0.320,,Vowel /a/ formants transition into nasal onset of /n/
+22,rec_000005,clip_05_male_account.wav,10,आठ,सात,5.308,5.300,,Retroflex stop closure drops to zero energy before /s/ frication
+23,rec_000005,clip_05_male_account.wav,14,चार,तीन,7.15,7.172,,Tap /r/ decays into 40ms stop closure before dental /t/
+24,rec_000005,clip_05_male_account.wav,21,उसपे,पुराना,10.655,10.680,,Vowel /e/ cuts off into bilabial stop closure for /p/
+25,rec_000005,clip_05_male_account.wav,22,पुराना,डेबिट,11.076,11.082,,Vowel /a/ glottal pulses cease at voiced stop closure for /d/
+26,rec_000005,clip_05_male_account.wav,25,लिंक,मत,11.937,11.925,,Velar stop /k/ burst finishes before nasal murmur of /m/
+27,rec_000006,clip_06_female_investment.wav,3,ना,बेसिकली,1.082,1.102,,Hesitation particle /na/ sustained before bilabial closure for /b/
+28,rec_000006,clip_06_female_investment.wav,13,थे,पर,4.208,4.185,,Aspiration breath trails off into silence before /p/ closure
+29,rec_000006,clip_06_female_investment.wav,17,मार्केट,डाउन,7.374,7.388,,Retroflex stop burst /tt/ releases into brief pause before /d/
+30,rec_000006,clip_06_female_investment.wav,24,इन्वेस्टमेंट,बिल्कुल,9.118,9.115,,Final dental release of loanword investment into /b/ closure
